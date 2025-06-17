@@ -28,7 +28,7 @@ const Missing_persons = () => {
     <div className='personwhole' style={{backgroundColor:'#f1f1f1'}}>
     <div className="personheader">
     <div className="subheadingmissing">
-        <div className='text-4xl'>Missing People</div>
+        <div className='text-4xl text-black'>Missing People</div>
         <img src={missingimg} alt="" srcset="" width="70px"/>
     </div>
     </div>

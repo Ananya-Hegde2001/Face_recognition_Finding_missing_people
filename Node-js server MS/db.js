@@ -1,9 +1,17 @@
-const mongoose=require('mongoose');
-const mongoURI="mongodb+srv://Garvit_Batra:!Ramprakash123@cluster0.eklye.mongodb.net/Face_Recognition?retryWrites=true&w=majority"
+const mongoose = require('mongoose');
 
-const connectToMongo=()=>{
-    mongoose.connect(mongoURI,()=>{
-        console.log("connected to mongo successfully");
-    })
-}
-module.exports=connectToMongo;
+const mongoURI = 'mongodb://localhost:27017/facerecognition';
+
+const connectToMongo = async () => {
+  try {
+    await mongoose.connect(mongoURI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    });
+    console.log('Connected to Mongo Successfully');
+  } catch (error) {
+    console.error('Error connecting to MongoDB:', error.message);
+  }
+};
+
+module.exports = connectToMongo;

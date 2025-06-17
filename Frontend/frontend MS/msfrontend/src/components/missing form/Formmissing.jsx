@@ -57,10 +57,10 @@ const Formmissing = () => {
  
   <div className='formout'>
   <div className="containerform">
-    <div className="title">Registration</div>
+    <div className="title  text-black">Registration</div>
     <div className="content">
       <form method="POST">
-        <div className="user-details">
+        <div className="user-details  text-black">
           <div className="input-box">
             <span className="details">Full Name</span>
             <input type="text" placeholder="Enter person's name" name="name" value={user.name} onChange={handleinput} required/>

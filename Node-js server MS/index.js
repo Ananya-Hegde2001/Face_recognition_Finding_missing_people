@@ -15,6 +15,9 @@ app.use("/api/foundlocation",require("./routes/location"));
 
 
 
+app.get("/", (req, res) => {
+  res.send("Face Recognition API Server is Running!");
+});
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
